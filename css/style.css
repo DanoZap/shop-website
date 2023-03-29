@@ -33,6 +33,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
+    width: 100vw;
     padding: 1rem 7%;
     display: flex;
     align-items: center;
@@ -397,8 +398,34 @@ span {
 }
 
 @media (max-width: 400px) {
-    html {
-        font-size: 26%;
+    :root {
+        --size: 250px;
     }
-    
+    html {
+        font-size: 25%;
+    }
+    header .navbar {
+        padding: .5rem 5%;
+    }
+}
+
+@media (max-width: 370px) {
+    html {
+        font-size: 22%;
+    }
+    header .navbar {
+        padding: .3rem 2%;
+    }
+}
+
+@media (max-width: 320px) {
+    :root {
+        --size: 200px;
+    }
+    html {
+        font-size: 20%;
+    }
+    header .navbar {
+        padding: .1rem 1%;
+    }
 }
